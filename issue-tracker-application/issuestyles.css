@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+    margin: 0 15px 0 15px;
+    padding: 20px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+#backgroundColorBtn {
+    margin-top: 12px;
+}
+
+#sort {
+    margin-top: 12px;
+    display: none;
+}
+
+#sortButton {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    margin: 0;
+}
+
+.add-new-issue-text {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.color-sort-btn {
+    display: flex;
+}
+
+.info {
+    background-color: rgb(232, 237, 238);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 1px solid  gainsboro;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.description-text {
+    margin-left: 20px;
+}
+
+#selectSeverity {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.severity-text {
+    margin-left: 20px;
+}
+
+.assigned-to-text {
+    margin-left: 20px;
+}
+
+#addButton {
+    width: 50px;
+    height: 35px;
+    margin: 10px 0 10px 25px;
+}
+
+.issue {
+    background-color: rgb(232, 237, 238);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 20px 5px 0 5px;
+    padding-left: 10px;
+}
+
+#issueIdDateTime {
+    margin-right: 10px;
+    margin-left: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.status {
+    background-color: rgb(129, 116, 201);
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    color:white;
+    margin: 10px 0 8px 25px;
+    align-content: center;
+}
+
+#describeShow {
+    margin:10px 0 0 20px;
+    font-style: "arial,serif";
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.severity-assignedto-show {
+    display: flex;
+    margin-left: 15px;
+}
+
+#severityShow, #assignedtoShow {
+    font-style: "arial,serif";
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#assignedtoIcon, #severityIcon {
+    width: 30px;
+    padding: 0;
+}
+
+button {
+    border: 1px solid rgb(232, 237, 238);
+    border-radius: 5px;
+    margin-top: 3px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#closeDelete {
+    margin-left: 16px;
+}
+
+#close {
+    width: 60px;
+    height: 30px;
+    color: white;
+    background-color: orangered;
+    margin: 0;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+#delete {
+    width: 60px;
+    height: 30px;
+    color:white;
+    background-color: red;
+    margin-left: 5px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+.font-style {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}

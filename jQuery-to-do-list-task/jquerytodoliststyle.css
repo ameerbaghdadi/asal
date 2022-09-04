@@ -1,0 +1,112 @@
+#mainDiv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 80px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#doLundry {
+    width: 35%;
+}
+
+#addToDo {
+    border: 1px solid rgb(232, 237, 238);
+    border-radius: 5px;
+    background-color: rgb(81, 160, 81);
+    color: white;
+    cursor: pointer;
+}
+
+hr {
+    width: 42%;
+    border: 1px solid rgb(232, 237, 238);
+}
+
+.checkBox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid  gainsboro;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 2px 7px 0 10px;
+}
+
+#allList {
+    text-align: center;
+}
+
+#allList > div {
+    display: flex;
+    width: 42%;
+    height: 30px;
+    margin: 30px 0 0 29%;
+    border-bottom: 2px solid rgb(232, 237, 238);
+}
+
+.completed {
+    opacity: .5;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.fa-trash {
+    cursor: pointer;
+    color: red;
+}
+
+.new-div {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.sec-div {
+    display: flex;
+}
+
+.deleteAll {
+    border: 1px solid rgb(232, 237, 238);
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.getAjax {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+body.dragging, body.dragging * {
+    cursor: move !important;
+}
+
+.dragged {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 2000;
+}
+
+div#allList div.new-div {
+    position: relative;
+}
+
+div#allList div.new-div:before {
+    position: absolute;
+}

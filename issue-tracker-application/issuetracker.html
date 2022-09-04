@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Issue Tracker</title>
+        <link href="issuestyles.css" type="text/css" rel="stylesheet" />
+        <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="issue-Tracker"><h1>Issue Tracker Application</h1></div>
+            <div class="color-sort-btn">
+                <div class="sort" id="sort">
+                    <button type="button" id="sortButton" onclick="sortIssue()" value="sort">Sort Issues</button>
+                </div>
+                <div class="background-color" id="backgroundColorBtn">
+                    <button type="button" id="sortButton" onclick="backgroundColor()" value="Change Color">Change Background Color</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="info">
+                <div class="add-new-issue-text"><h2>Add New Issue:</h2></div><br />
+                    <form id="iforForm">
+                        <div class="description-text">
+                            <label><b>Description</b></label>
+                            <input type="text" id="describeIssue" placeholder="Describe the issue ..">
+                        </div>
+                        <div class="severity-text">
+                            <label><b>Severity</b></label><br />
+                            <select id="selectSeverity" name="severity">
+                                <option value=0>Low</option>
+                                <option value=1>Medium</option>
+                                <option value=2>High</option>
+                            </select>
+                        </div>
+                        <div class="assigned-to-text">
+                            <label><b>Assigned To</b></label>
+                            <input type="text" id="assignedTo" placeholder="Enter responsible ..">  
+                        </div>
+                        <button type="button" id="addButton" onclick="addInfo()" value="Add">Add</button>
+                    </form>
+            </div>
+            <div id="issues"></div>
+        </div>
+        <script src="issuescript.js"></script>
+    </body>
+</html>

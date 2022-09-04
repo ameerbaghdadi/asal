@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>New Customer</title>
+    <link href="css/customerInfostyles.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+    <script src="customersTypescript.js"></script>
+</head>
+
+<body onload="reloadCustomerInfo()">
+
+    <div id="head">
+        <h1><span id="span">Customer</span> Information</h1>
+    </div>
+
+    <div class="main">
+        <h2>New Customer</h2>
+        <form class="form">
+            <div class="info">
+                <div id="name">
+                    <label for="name">Full Name</label><br />
+                    <input type="text" name="fullname" id="fullName" placeholder="Full Name"/>
+                </div>
+
+                <div id="email">
+                    <label for="email">Email Address</label><br />
+                    <input type="text" name="email" id="emailCustomer" placeholder="name@company.com"/>
+                </div>
+
+                <div id="company">
+                    <label for="company">Company</label><br />
+                    <input type="text" name="companyname" id="companyCustomer" placeholder="Company Name"/>
+                </div>
+
+                <div id="phone">
+                    <label for="phonenumber">Phone Number</label><br />
+                    <input type="text" name="phonenumber" id="phoneNumber" placeholder="Phone Number"/>
+                </div>
+
+                <input type="button" id="submit" onclick="getCustomerInfo()" value="Create Customer+"/>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
